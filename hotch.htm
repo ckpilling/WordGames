@@ -1,0 +1,60 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    </head>
+    <body>
+<form name="wordGame" action="cgi-bin/wordGameWeb.py" method="post" target="">
+<table>
+    <tr>
+        <td>
+            <h1> Python word game.</h1>
+        </td>
+    </tr>    
+    <tr>
+        <td>
+        Type or Paste your text into this box. The Python script behind the scenes will take the Ord value of each character and divide it by 2. Depending on the Modulo value you select you will see odd or even ordinaled characters.
+        </td> 
+    </tr>
+    <tr>
+        <td>
+        <textarea maxlength="256" rows="8" cols="70" name="text_input"></textarea>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>
+            Select the modulo (%2) value you wish to apply:
+        </td>
+        <td> 
+            <select name="modchoice">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            </select>
+        </td>
+        <td>    
+    </tr>
+    <tr>
+        <td>
+        <input type="submit" value="Submit" name="submit">
+        </td>
+    </tr>
+    </table>
+    <table>
+    <tr>
+        <td>
+
+            Sample text to Copy and Paste.
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    Humpty Dumpty sat on a wall, Humpty Dumpty had a great fall. All the King's horses and all the King's men, couldn't put Humpty together again!
+                    </td>
+                    </tr>
+</table>
+</br>
+</form>
+</body>
+<html>
+
